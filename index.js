@@ -31,4 +31,13 @@ function reset() {
     document.getElementById("count").innerText = count;
     updateDisplay();
 }
-console.log("Updating count:", count);
+//keyboard shortcut handling 
+document.addEventListener("keydown", function(event){
+    if (event.key==="ArrowUp"){
+        increase();
+    }else if(event.key ==="ArrowDown"){
+        decrease();
+    }else if(event.key==="r" || event.key ==="R"){
+        reset()
+    }
+})
