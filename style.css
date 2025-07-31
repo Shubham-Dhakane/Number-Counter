@@ -12,3 +12,9 @@ button {
   font-size: 18px;
   margin: 5px;
 }
+#message {
+  color: orange;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 10px;
+}
