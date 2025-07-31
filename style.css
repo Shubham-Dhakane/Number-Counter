@@ -1,0 +1,14 @@
+body {
+  font-family: Arial;
+  text-align: center;
+  margin-top: 50px;
+}
+#count {
+  font-size: 50px;
+  margin: 20px;
+}
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  margin: 5px;
+}
