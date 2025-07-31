@@ -1,11 +1,21 @@
 
 let count = 0; // start from zero
 const beepSound = new Audio("/button-5.mp3");
+const toggleButton = document.getElementById("toggle-theme");
+
+toggleButton.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+});
 
 function updateDisplay() {
     const countElement = document.getElementById("count");
      const messageElement = document.getElementById("message");
     countElement.innerText = count;
+
+      // Animate count
+    countElement.classList.remove("animate");
+    void countElement.offsetWidth; // force reflow
+    countElement.classList.add("animate");
 
     // Change color based on value
     if (count > 0) {
